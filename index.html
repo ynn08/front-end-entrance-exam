@@ -1,13 +1,169 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body class="root">
+  <div class="page">
+    <main class="content">
+      <div class="wrapper">
+        <form class="text-fields-form" id="resume-form">
+          <div class="resume-page">
+            <div class="profile-image">
+              <img class="image" src="public/profileImg.svg" alt="profile image">
+            </div>
+            <div class="name-box">
+              <input class="name-box__greeting" type="text" title="greeting" value="Hello 👋🏻 I’m">
+              <input class="name-box__name" type="text" title="name" value="Graham Hunt">
+              <textarea class="name-box__role" type="text" title="role" rows="2"
+                maxlength="24">Brand/Logo Designer</textarea>
+            </div>
+            <div class="languages-box">
+              <input class="languages-box__title box-title" type="text" title="title" value="Languages">
+              <div class="languages-list">
+                <div class="languages-names">
+                  <input class="languages-list__item" type="text" title="language" value="English">
+                  <input class="languages-list__item" type="text" title="language" value="Spanish">
+                  <input class="languages-list__item" type="text" title="language" value="French">
+                </div>
+                <img class="languages-levels" src="public/levelLenguage.svg" alt="languages levels">
+              </div>
+            </div>
+            <div class="education-box">
+              <input class="education-box__title box-title" type="text" title="title" value="Education">
+              <div class="education-box__content">
+                <div class="education-box__column-1">
+                  <div class="last-education">
+                    <img class="last-education__icon" src="public/heart.svg" alt="heart">
+                    <input class="last-education__date" type="text" title="date" value="2024">
+                    <input class="last-education__title" type="text" title="title" value="UX/UI">
+                    <textarea class="last-education__tags" type="text" title="tags" rows="4" maxlength="90">#UX #UI #research #DesignSystem #Agile #wireframing #figma #IA
+                  </textarea>
+                    <input class="last-education__school" type="text" title="school" value="Neoland">
+                  </div>
+                  <div class="education-2">
+                    <input class="education-2__date" type="text" title="date" value="2017-2021">
+                    <input class="education-2__title" type="text" title="title" value="Graphic design">
+                    <textarea class="education-2__tags" type="text" title="tags" rows="2" maxlength="53">#branding #web #illustration #adobe
+                  </textarea>
+                    <input class="education-2__school" type="text" title="school" value="Cali Institute of the Arts">
+                  </div>
+                </div>
+                <div class="education-box__column-2">
+                  <div class="education-1">
+                    <input class="education-1__date" type="text" title="date" value="2022">
+                    <input class="education-1__title" type="text" title="title" value="Product designer">
+                    <textarea class="education-1__tags" type="text" title="tags" rows="2" maxlength="54">#analytics #research #prototype #wireframes
+                  </textarea>
+                    <input class="education-1__school" type="text" title="school" value="Coursera">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="extra-box">
+              <div class="interests-box">
+                <input class="interests-box__title box-title" type="text" title="title" value="Interests">
+                <div class="interests-box__content">
+                  <input class="interests-box__tag" type="text" title="tag" value="branding">
+                  <input class="interests-box__tag" type="text" title="tag" value="brand identity">
+                  <input class="interests-box__tag" type="text" title="tag" value="logo">
+                  <input class="interests-box__tag" type="text" title="tag" value="typography">
+                  <input class="interests-box__tag" type="text" title="tag" value="photography">
+                  <input class="interests-box__tag" type="text" title="tag" value="designing">
+                  <input class="interests-box__tag" type="text" title="tag" value="poster design">
+                  <input class="interests-box__tag" type="text" title="tag" value="research">
+                  <input class="interests-box__tag" type="text" title="tag" value="social networks">
+                  <input class="interests-box__tag" type="text" title="tag" value="illustration">
+                </div>
+
+              </div>
+              <div class="contact-box">
+                <textarea class="contact-box__title" type="text" title="title" rows="2" maxlength="25">Let´s chat! I´m ready to work on excinting projects
+            </textarea>
+                <input class="contact-box__info" type="text" title="info" value="ivann19bj@gmail.com | +34 666 666 666">
+
+              </div>
+
+            </div>
+            <div class="tools-box">
+              <input class="tools-box__title box-title" type="text" title="title" value="Tools">
+              <div class="tools-wrapper">
+                <img class="tools-box__frame" src="public/frame.svg" alt="tools">
+              </div>
+            </div>
+            <div class="experience-box">
+              <input class="experience-box__title box-title" type="text" title="title" value="Experience">
+              <div class="experience-box__last-job">
+                <img class="last-job__icon" src="public/recent.svg" alt="most recent">
+                <input class="last-job__date" type="text" title="date" value="Jul. 2023 - Ago. 2023">
+                <div class="last-job__content">
+                  <div class="last-job__column-1">
+                    <input class="last-job__role" type="text" title="role" value="Senior Graphic Designer">
+                    <input class="last-job__about" type="text" title="about" value="Pinnacle | Full-time">
+                  </div>
+                  <div class="last-job__column-2">
+                    <textarea class="last-job__point" type="text" title="point" rows="2" maxlength="50">• Research and brainstorm various design ideas for content and marketing.
+                  </textarea>
+                    <textarea class="last-job__point" type="text" title="point" rows="2" maxlength="50">• Review the work submitted by Junior Designers and sharing feedback.
+                  </textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="experience-box__job-1">
+                <input class="job-1__date" type="text" title="date" value="Ene. 2021 - Jul. 2023">
+                <div class="job-1__content">
+                  <div class="job-1__column-1">
+                    <input class="job-1__role" type="text" title="role" value="Graphic / Web designer">
+                    <input class="job-1__about" type="text" title="about" value="Double Square | Full-time">
+                  </div>
+                  <div class="job-1__column-2">
+                    <textarea class="job-1__point" type="text" title="point" rows="2" maxlength="50">• Development of internal projects from scratch, product design of brands.
+                  </textarea>
+                    <textarea class="job-1__point" type="text" title="point" rows="1" maxlength="50">• Landing page, webapps and hybrid apps
+                  </textarea>
+                    <textarea class="job-1__point" type="text" title="point" rows="2" maxlength="50">• Taking decisions with stakeholders for the future of products such as Beagle labs, myur...
+                  </textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="experience-box__job-2">
+                <input class="job-2__date" type="text" title="date" value="Feb. 2021 - Jul. 2023">
+                <div class="job-2__content">
+                  <div class="job-2__column-1">
+                    <input class="job-2__role" type="text" title="role" value="Graphic Designer">
+                    <input class="job-2__about" type="text" title="about" value="Freelance">
+                  </div>
+                  <div class="job-2__column-2">
+                    <textarea class="job-2__point" type="text" title="point" rows="2" maxlength="50">• Visual design for Events, Brands and Products.
+                  </textarea>
+                    <textarea class="job-2__point" type="text" title="point" rows="1" maxlength="50">• Product design, Packaging Design
+                  </textarea>
+                    <textarea class="job-2__point" type="text" title="point" rows="1" maxlength="50">• Logo Design
+                  </textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </form>
+      <button class="download-btn" type="button" form="resume-form">Download</button>
+    </main>
+  </div>
+
+  <div id="app"></div>
+  <!-- <script type="module" src="js/main.js"></script> -->
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</body>
+
 </html>
