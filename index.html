@@ -10,9 +10,6 @@
   <link rel="stylesheet" href="css/fonts.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vite App</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body class="root">
@@ -20,7 +17,7 @@
     <main class="content">
       <div class="resume-page">
         <div class="profile-image focus">
-          <img class="image" src="public/profileImg.svg" alt="profile image">
+          <img class="image" fetchpriority="high" src="public/profileImg.svg" alt="profile image">
         </div>
         <div class="name-box focus">
           <input class="name-box__greeting" type="text" title="greeting" value="Hello 👋🏻 I’m">
@@ -97,7 +94,7 @@
         <div class="tools-box focus">
           <input class="tools-box__title box-title" type="text" title="title" value="Tools">
           <div class="tools-wrapper">
-            <img class="tools-box__frame" src="public/frame.svg" alt="tools">
+            <img class="tools-box__frame" fetchpriority="high" src="public/frame.svg" alt="tools">
           </div>
         </div>
         <div class="experience-box focus">
@@ -158,6 +155,9 @@
     </main>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+  integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
 </body>
 
