@@ -71,3 +71,4 @@ function getChanges() {
 
 window.onclick = saveChanges;
 window.onload = getChanges;
+

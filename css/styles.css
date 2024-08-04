@@ -47,13 +47,8 @@ html {
         "education education extra"
         "tools experience experience";
     gap: 2em;
-    border: 2px solid white;
-    transition: border-color .3s ease-in-out;
 }
 
-.resume-page:hover {
-    border: 2px solid #515151;
-}
 
 .profile-image {
     grid-area: image;
@@ -102,6 +97,15 @@ html {
     font-weight: 700;
     padding: 0.5em 1em 0.5em;
     font-size: 1.8em;
+}
+
+.focus {
+    border: 1px solid #F0F0F0;
+    transition: border-color .3s ease-in-out;
+}
+
+.focus:hover {
+    border: 1px solid #515151;
 }
 
 .name-box__role {
